@@ -65,7 +65,7 @@
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk,sysui-studio" clone-depth="1" remote="aosp" />
 
   <!-- Android Manifest  -->
-  <project path="android" name="android" remote="rising" />
+  <project path="android" name="android" revision="fourteen" remote="zzz" />
   <project path="risingOS_changelogs" name="risingOS_changelogs" remote="rising" />
   <project path="risingOS_wiki" name="risingOS_wiki" remote="rising" />
   
