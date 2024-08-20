@@ -18,12 +18,12 @@ Getting Started
 ---------------
 **Initialize local repository**
 ```bash
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+ repo init --depth=1 --no-repo-verify -u https://github.com/Xcvbnx/android.git -b fourteen --git-lfs -g default,-mips,-darwin,-notdefault
 ```
 
 **Sync up with this command:**
 ```bash
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune --retry-fetches=5 -j$(nproc --all)
 ```
 
 ```bash
